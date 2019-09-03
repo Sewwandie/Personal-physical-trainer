@@ -1,0 +1,205 @@
+<div class="wrapper">
+        <div class="page-header page-header-small" filter-color="orange">
+                <div class="page-header-image rellax-header" data-rellax-speed="-8" style="background-image: url('assets/img/bg5.jpg') ;">
+                </div>
+                <div class="container">
+                   
+                    <div class="content-center">
+                            <h2>Hello Dr.Clington, you have</h2>
+                        <div class="lcontent">
+                            <div class="social-description">
+                                <h2>26</h2>
+                                <p>Patient Logins</p>
+                            </div>
+                            <div class="social-description">
+                                <h2>26</h2>
+                                <p>New Messages</p>
+                            </div>
+                            <div class="social-description">
+                                <h2>48</h2>
+                                <p>Due Assignments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <div class="section section-about-us">
+        <div class="container">
+                <!-- <p class="category">Tabs with Background on Card</p> -->
+                      
+                <div class="card">
+                 <div class="nav-tabs-navigation" data-tabs-color="orange">
+                     <div class="nav-tabs-wrapper">
+                         <ngb-tabset [justify]="'center'" class="text-center" >
+                             
+                             <ngb-tab title="Clients">
+                               <ng-template ngbTabContent>
+                                    <button type="button" class="btn btn-primary btn-round" >Add Client</button>
+                                    <!-- <div class="card"> -->
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                                                <input type="text" class="form-control" placeholder="Search" (focus)="focus1=true" (blur)="focus1=false">
+                                                <div class="input-group-append">
+                                                  <span class="input-group-text">
+                                                      <i class="now-ui-icons users_single-02"></i>
+                                                  </span>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="header">
+                                                <h4 class="title">Striped Table with Hover</h4>
+                                                <!-- <p class="category">Here is a subtitle for this table</p> -->
+                                            <div class="content table-responsive table-full-width">
+                                                  <table class="table table-hover table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th *ngFor="let cell of tableData1.headerRow">{{ cell }}</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr *ngFor="let row of tableData1.dataRows">
+                                                                <td *ngFor="let cell of row">{{cell}}</td>
+                                                            </tr>
+                                                        </tbody>
+                                                  </table>
+                                            </div>
+                                                
+                                            </div>
+                                        <!-- </div> -->
+                               </ng-template>
+                             </ngb-tab>
+                             <ngb-tab title="Exercises"> -->
+                                    <ng-template ngbTabContent>
+                                     <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+                                   </ng-template>
+                            </ngb-tab>
+
+                             <ngb-tab title="Courses">
+                               <ng-template ngbTabContent>
+                                   <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+                                </ng-template>
+                             </ngb-tab>
+                             <ngb-tab title="Settings"> 
+                                 <ng-template ngbTabContent>
+                                   <p>
+                                       "I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at."
+                                   </p>
+                                 </ng-template>
+                             </ngb-tab>
+                         </ngb-tabset>
+                     </div>
+                 </div>
+               </div>
+        </div>
+    </div>
+    <!-- <div class="section section-team text-center">
+        <div class="container">
+            <h2 class="title">Here is our team</h2>
+            <div class="team">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <img src="assets/img/avatar.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                            <h4 class="title">Romina Hadid</h4>
+                            <p class="category text-primary">Model</p>
+                            <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                                <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-instagram"></i></a>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-facebook-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <img src="assets/img/ryan.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                            <h4 class="title">Ryan Tompson</h4>
+                            <p class="category text-primary">Designer</p>
+                            <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                                <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <img src="assets/img/eva.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                            <h4 class="title">Eva Jenner</h4>
+                            <p class="category text-primary">Fashion</p>
+                            <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                                <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-google-plus"></i></a>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-youtube"></i></a>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-contact-us text-center">
+        <div class="container">
+            <h2 class="title">Want to work with us?</h2>
+            <p class="description">Your project is very important to us.</p>
+            <div class="row">
+                <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
+                  <div class="input-group input-lg" [ngClass]="{'input-group-focus':focus===true}">
+                    <div class="input-group-prepend" >
+                      <span class="input-group-text">
+                          <i class="now-ui-icons users_circle-08"></i>
+                      </span>
+                    </div>
+                      <input type="text" class="form-control" placeholder="Left Font Awesome Icon" (focus)="focus=true" (blur)="focus=false">
+                  </div>
+                  <div class="input-group input-lg" [ngClass]="{'input-group-focus':focus1===true}">
+                    <div class="input-group-prepend" >
+                      <span class="input-group-text">
+                            <i class="now-ui-icons ui-1_email-85"></i>
+                      </span>
+                    </div>
+                      <input type="text" class="form-control" placeholder="Left Font Awesome Icon" (focus)="focus1=true" (blur)="focus1=false">
+                  </div>
+                    <div class="textarea-container">
+                        <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
+                    </div>
+                    <div class="send-button">
+                        <a href="#pablo" class="btn btn-primary btn-round btn-block btn-lg">Send Message</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <footer class="footer footer-default">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.creative-tim.com">
+                            Creative Tim
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.creative-tim.com/about-us">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://blog.creative-tim.com">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
+                            MIT License
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                &copy;
+                {{data | date: 'yyyy'}}, Designed by
+                <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by
+                <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+            </div>
+        </div>
+    </footer>
+</div>
